@@ -9,17 +9,17 @@ jobs:
       matrix:
         php: [7.3, 7.4]
         wp: [5.9]
-    services:
-      mysql:
-        image: mysql:8
-        env:
-          MYSQL_USER: laravel_user
-          MYSQL_PASSWORD: laravel_pass
-          MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: wordpress
-        ports:
-          - 3306:3306
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+    # services:
+    #   mysql:
+    #     image: mysql:8
+    #     env:
+    #       MYSQL_USER: laravel_user
+    #       MYSQL_PASSWORD: laravel_pass
+    #       MYSQL_ROOT_PASSWORD: root
+    #       MYSQL_DATABASE: wordpress
+    #     ports:
+    #       - 3306:3306
+    #     options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - name: Check out source code
         uses: actions/checkout@v2
