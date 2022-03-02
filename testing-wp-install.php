@@ -4,5 +4,5 @@
 *	Description: Plugin description
 *	Author: Kevin
 *	Text Domain: myplugin
-*	Version: 0.1.0
+*	Version: 0.1.1
 */
