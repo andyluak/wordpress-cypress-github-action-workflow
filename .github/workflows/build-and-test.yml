@@ -107,14 +107,14 @@ jobs:
           CYPRESS_baseUrl: http://localhost:8080/index.php
 
       - name: Cypress screenshots
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2.2.4
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
       - name: Cypress videos
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2.2.4
         if: always()
         with:
           name: cypress-videos
