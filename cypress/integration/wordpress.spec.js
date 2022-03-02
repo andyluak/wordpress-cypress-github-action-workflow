@@ -6,6 +6,8 @@ it('should be able to login automatically and redirect to dashboard', () => {
     // user pass
     cy.get('#user_pass').type('wordpress', { delay: 0 });
 
+    //
+
     // wp submit
     cy.get('#wp-submit').click();
 
