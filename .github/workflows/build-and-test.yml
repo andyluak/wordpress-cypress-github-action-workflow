@@ -49,7 +49,7 @@ jobs:
         run: COMPOSER_ROOT_VERSION=dev-master composer install --prefer-dist --no-progress --no-suggest
 
       - name: Start MySQL server
-        run: sudo service mysql start
+        run: sudo systemctl start mysql
 
       - name: Prepare test database
         run: |
