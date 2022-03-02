@@ -1,5 +1,5 @@
 it('should be able to login automatically and redirect to dashboard', () => {
-    cy.visit('http://localhost:8080/wp-login.php')
+    cy.visit('http://localhost:8080/p-login.php')
     // user login
     cy.get('#user_login').type('wordpress', { delay: 0 });
 
